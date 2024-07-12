@@ -1,0 +1,53 @@
+{
+    "driver": true,
+    "name": "MongoError",
+    "index": 0,
+    "code": 11000,
+    "keyPattern": {
+        "email": 1
+    },
+    "keyValue": {
+        "email": "misingrrrrr@gmail.com"
+    }
+}
+
+{
+    "errors": {
+        "password": {
+            "name": "ValidatorError",
+            "message": "Please provide a password",
+            "properties": {
+                "message": "Please provide a password",
+                "type": "required",
+                "path": "password"
+            },
+            "kind": "required",
+            "path": "password"
+        },
+        "email": {
+            "name": "ValidatorError",
+            "message": "Please provide an email",
+            "properties": {
+                "message": "Please provide an email",
+                "type": "required",
+                "path": "email"
+            },
+            "kind": "required",
+            "path": "email"
+        },
+        "name": {
+            "name": "ValidatorError",
+            "message": "Please provide a name",
+            "properties": {
+                "message": "Please provide a name",
+                "type": "required",
+                "path": "name"
+            },
+            "kind": "required",
+            "path": "name"
+        }
+    },
+    "_message": "User validation failed",
+    "name": "ValidationError",
+    "message": "User validation failed: password: Please provide a password, email: Please provide an email, name: Please provide a name"
+}
